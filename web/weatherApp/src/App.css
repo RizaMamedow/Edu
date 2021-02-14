@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  font-family: "Roboto` ", serif;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+}
+
+.main {
+  height: 55vh;
+  background: #009DFA;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.clock {
+  height: 55vh;
+  background: url("./img/photo.jpg") center center no-repeat;
+  background-blend-mode: multiply;
+  background-color: #484747;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #FFF;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.clock .digitalClock{
+  display: flex;
+}
+.clock .digitalClock div{
+  margin: 5px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.clock .titleClock h6{
+  font-weight: 200;
+  margin: 0;
+  font-size: 25px;
+}
+.clock .ampm{
+  color: #4396E9;
+}
+.form {
+  height: 55vh;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.form .titleForm{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .titleForm h4{
+  font-weight: 200;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+.form input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #E8F0FE;
+  width: 50%;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  color: #E8F0FE;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+  transition: 0.5s;
+}
+.form input::placeholder{
+  color: #E8F0FE;
+}
+
+
+button {
+  background: #3088E7;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  outline: none!important;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #fff;
+  color: #009DFA;
+}
+
+button:active {
+  background: #009DFA;
+  color: #fff;
+}
+
+
+.weather{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+}

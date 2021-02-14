@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-family:consolas;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:	#f2f2f2;
+}
+.block{
+	width: 300px;
+	height: 300px;
+	border-radius: 89px;
+	background: #f2f2f2;
+	box-shadow: 30px 30px 36px #aeaeae, 
+	            -30px -30px 36px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block img{
+	width: 150px;
+	height: 150px;
+}

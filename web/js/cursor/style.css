@@ -1,0 +1,25 @@
+*{
+  font-family: futura;
+}
+.cursor{
+  background: rgba(002,003,003,0.6);
+  box-shadow: 0 0 0 5px rgba(002,003,003,0.1);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box{
+  background: #cecece;
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

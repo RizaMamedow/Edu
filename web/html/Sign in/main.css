@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	user-select: none;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+form{
+	border: 1px solid #dedede;
+	padding: 20px;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+	flex-direction:column;
+	transform: scale(1.3);
+}
+form section{
+	display: flex;
+	flex-direction: column;
+}
+form section:nth-child(2),
+form section:nth-child(3){
+	padding: 13px;
+}
+form section.title{
+	border-bottom: 5px solid #f0f0f0;
+}
+form section.title h2{
+	font-weight: 200;
+	font-size: 33px;
+	color: #999;
+}
+form section input{
+	border-bottom: 8px solid #A3A3A3;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: 5px;
+	width: 230px;
+	height: 60px;
+	outline: none;
+	transition: 0.5s;
+}
+form section input:focus,
+form section input:hover{
+	border: none;
+	border-bottom: 5px solid #FF4141;
+}
+form section input:focus::placeholder,
+form section input:hover::placeholder{
+	color: #FF4141;
+	margin-bottom: 3px;
+}
+
+form section input:not(:placeholder-shown):invalid {
+  	color: red;
+  	outline-color: red;
+  	border-color: red
+}
+form section input::placeholder{
+	color: #A3A3A3;
+	transition: 0.5s;
+}
+
+form section button{
+	padding: 10px 30px;
+	background: #FF4141;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	border: none;
+}
+form section button:hover{
+	background: #A3A3A3;
+	transition: 0.7s;
+}
+form section:nth-child(5){
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form section:nth-child(2){
+	display: flex;
+	flex-direction: initial;
+}
+form section:nth-child(2) input{
+	width: 48%;
+	margin-left: 2%;
+}
+form section:nth-child(2) input:nth-child(1){
+	width: 48%;
+	margin-left: 1%;
+}
+form section:nth-child(2) input:nth-child(2){
+	width: 48%;
+	margin-right: 1%;
+}
+
+form section:nth-child(4){
+	width: 100%;
+}
+form section:nth-child(4) input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 12px;
+}
+
+@media(max-width: 360px){
+	form{
+		border: none;
+	}
+	form section{
+		margin-left: 5px;
+	}
+	form section h2{
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	form section label{
+		text-align: center;
+		font-size: 15px;
+	}
+}

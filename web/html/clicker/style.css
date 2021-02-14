@@ -1,0 +1,49 @@
+#wr
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    width: 100vh;
+    margin-top: 2%;
+    padding: 5px 0;
+}
+#wr .input
+{
+    display: block;
+    float: left;
+
+    width: 50px;
+    padding: 8px;
+
+    text-align: center;
+
+    outline: none;
+}
+#plus
+{
+    font-size: 26px;
+    font-weight: bolder;
+
+    display: block;
+    float: left;
+
+    padding: 5px 5px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    color: #d00;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+
+    background-color: #222;
+}
